@@ -2,13 +2,14 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Absoluta & Bela</title>
+    <title>A&B</title>
 
-    <link rel="stylesheet" href="src/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
 
-   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 </head>
@@ -18,112 +19,66 @@
     <!-- Âncora do início da página -->
     <a id="top"></a>
 
-    <!-- Elemento wrap -->
     <div id="wrap">
 
         <!-- Cabeçalho -->
-        <header>
-
-            <!-- Logotipo clicável usando Font Awesome -->
-            <a href="/" title="Página inicial"></a>
-
-            <h1>
-                Absoluta & Bela
-            </h1>
-
-        </header>
-
-        <!-- Menu principal -->
-        <nav class="nav">
+      <header>
+         <h1> Absoluta & Bela</h1>
+         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Início</a>
-                    <li class="drop"><a href="#">Estética Facial</a>   
-                        <ul class="dropdown">
-                            <li><a href="#">Facial 1</a>
-                            <li><a href="#">Facial 2</a>
-                            <li><a href="#">Facial 3</a>   
-                        </ul> 
-        
-                     <li class="drop"><a href="#">Estética Corporal</a>   
-                         <ul class="dropdown">
-                            <li><a href="#">Corporal 1</a>
-                            <li><a href="#">Corporal 2</a>
-                            <li><a href="#">Corporal 3</a>   
-                        </ul> 
-                    <li><a href="#">Vlog</a>
-                    <li><a href="#">Compra pelo WhatsApp</a> 
-            
+                <li><a href="#">Estética Facial</a>
+                <li><a href="#">Estética Corporal</a>
+                <li><a href="#">Vlog</a>
+                <li><a href="#">Contatos</a>
             </ul>
-        
-        </nav>
-        <!-- Conteúdo -->
-        <main>
+         </menu>
+    </header>
 
-            <!-- Conteúdo principal -->
-            <article>
-                <!--
-                    Este é um conteúdo "fake", apenas para "encher linguiça"
-                    e facilitar a construção do layout.
-                -->
-                <h2>Título de teste</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia provident reiciendis earum, tenetur reprehenderit iure ipsum fugit praesentium alias deserunt sed maiores id rerum odio delectus perferendis voluptatum totam!</p>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolore pariatur dolores provident quidem ad magni? Animi odit, quasi blanditiis tempore sint tenetur consequatur sequi modi deleniti accusantium soluta similique.</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero hic, modi pariatur culpa animi cum! Consequatur, odit! Repudiandae, dolorem temporibus, quaerat, unde enim error eum minus praesentium libero quibusdam consequuntur.</p>
-                <img src="https://picsum.photos/200/200" alt="Imagem aleatória.">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti rem cupiditate ex rerum nostrum, voluptate fugiat totam! Repellat recusandae doloremque aspernatur sit ullam, ducimus perspiciatis deserunt optio vel commodi.</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae illum aliquam aperiam, laborum fugiat quos sunt expedita culpa! Minima harum mollitia aperiam nihil dolorem animi accusantium quia maxime expedita.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum necessitatibus neque quasi? Quibusdam qui necessitatibus tenetur provident explicabo, magni fuga velit dolorum soluta accusamus maxime eius sit! Quod, perferendis saepe?</p>
+           
 
-                <!--<h3>Lista de links:</h3>
-                <ul>
-                    <li><a href="https://">TikTok</a></li>
-                    <li><a href="https://">Instagram</a></li>
-                    <li><a href="https://">Facebook</a></li>
-                </ul>-->
+        </article>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi inventore nemo doloribus asperiores provident, recusandae maxime quam molestiae sapiente autem, suscipit perspiciatis. Numquam labore minima, accusamus vitae exercitationem quod!</p>
+        <aside>
+            <h3>Sobre Nós</h3>
+            <img src="/src/imagens/logo-site.png" width="250" height="250" alt="logotipo" class="logotipo">
 
-                <!-- Fim do conteúdo "fake" -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde excepturi doloribus dolores porro iste deserunt odio ducimus inventore rerum praesentium fugiat culpa, magni quo. Deleniti exercitationem a molestiae est.</p>
 
-            </article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque ut, facere voluptatibus eligendi nesciunt exercitationem non maiores maxime rem accusantium voluptatem provident. Et, eaque recusandae sapiente atque inventore velit?</p>
 
-            <!-- Conteúdo complementar / Barra lateral -->
-            <aside>
-                <!--
-                    Este é um conteúdo "fake", apenas para "encher linguiça"
-                    e facilitar a construção do layout.
-                -->
-                <h3>Barra lateral</h3>
-                <img src="/src/imagens/logo-site.png" width="250" height="250" alt="logotipo" class="logotipo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, cumque porro.</p>
+            <nav>
+                <h4>Redes sociais:</h4>
+                
+                <a href="https://facebook.com/" target="_blank" title="Acesse nosso Facebook">
+                    <i class="fi fi-brands-facebook fa-fw"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://instagram.com/" target="_blank" title="Nossa página no Instagram">
+                    <i class="fi fi-brands-instagram fa-fw"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://tiktok/" target="_blank" title="Nosso WhatsApp">
+                    <i class="fi fi-brands-whatsapp fa-fw"></i>
+                    <span>WhatsApp</span>                  
+                </a>
+                            
+            </nav>
+        </aside>
 
-                <nav>
-                    <h4>Redes sociais:</h4>
-                    <a href="https://facebook.com/Luferat" target="_blank" title="Acesse nosso Facebook">
-                        <i class="fa-brands fa-square-facebook fa-fw"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://youtube.com/Luferat" target="_blank" title="Nosso canal no Youtube">
-                        <i class="fa-brands fa-square-youtube fa-fw"></i>
-                        <span>Youtube</span>
-                    </a>
-                    <a href="https://github.com/Luferat" target="_blank" title="Nossa página no GitHub">
-                        <i class="fa-brands fa-square-github fa-fw"></i>
-                        <span>GitHub</span>
-                    </a>
-                </nav>
-
-
-
-                <!-- Fim do conteúdo "fake" -->
-            </aside>
-
-        </main>
-
-        <!-- Rodapé -->
         <footer>
 
             <!-- Bloco superior do rodapé -->
-            <div id="ftop">
+            <div class="ftop">
 
                 <!-- Link para a página inicial -->
                 <a href="/" title="Página inicial">
@@ -140,9 +95,7 @@
             </div>
 
             <!-- Bloco inferior do rodapé -->
-            <div id="fdown">
-
-                <!-- Menu de redes sociais -->
+            <div class="fdown">
                 
 
                 <!-- Menu de links internos -->
@@ -168,15 +121,9 @@
 
         <span>&nbsp;</span>
         
-        <!-- Fecha o wrap -->
     </div>
 
-    <!-- 1. Inclui a biblioteca jQuery pelo CDNJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <!-- 2. Inclui o JavaScript do site -->
-    <script src="/script.js"></script>
-
+    </main>
+   <script src="src/js/script.js"></script>
 </body>
-
 </html>

@@ -1,129 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>A&B</title>
+  <meta charset="UTF-8" />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/src/css/style.css">
+  <!-- Define o ícone de favoritos -->
+  <link rel="icon" href="/img/favicon.jpg">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Folhas de estilos de cada página serão carregadas aqui -->
+  <link rel="stylesheet" href="" id="pageCSS">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+  <title>Absoluta & Bela</title>
 </head>
 
 <body>
+  <!-- Âncora do início da página -->
+  <a id="top"></a>
 
-    <!-- Âncora do início da página -->
-    <a id="top"></a>
+  <!-- 
+      Container da página:
+      Este elemento permite limitar o tamanho mínimo e máximo da página
+      e também centraliza ela na tela.
+    -->
+  <div id="wrap">
+    <!-- Cabeçalho da página -->
+    <header>
+      <!-- Logotipo clicável usando Font Awesome -->
+      <a href="home" title="Página inicial">
+        <img src="/img/logotipo.png" alt="logotipo" height="100" width="100">
+        <!--<i class="fa-solid fa-laptop-code fa-fw"></i>-->
+      </a>
 
-    <div id="wrap">
-
-        <!-- Cabeçalho -->
-      <header>
-         <h1> Absoluta & Bela</h1>
-         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
-        <menu id="itens">
-            <ul>
-                <li><a href="#">Início</a>
-                <li><a href="#">Estética Facial</a>
-                <li><a href="#">Estética Corporal</a>
-                <li><a href="#">Vlog</a>
-                <li><a href="#">Contatos</a>
-            </ul>
-         </menu>
+      <!-- Título e slogan do site / página -->
+      <h1>
+        Absoluta & Bela
+        <small>Centro de estética e beleza</small>
+      </h1>
     </header>
 
-    <main>
-        <article>
-            <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolore pariatur dolores provident quidem ad magni? Animi odit, quasi blanditiis tempore sint tenetur consequatur sequi modi deleniti accusantium soluta similique.</p>
+    <!--
+        Menu principal:
+          / → Raiz do aplicativo → Será carregada a "index.html";
+          /contacts → Página com formulário e links de contato;
+          /about → Sobre o site, autor e privacidade;
+          /profile → Gestão do usuário (login, logou, perfil, ...).
+       -->
+    <nav>
+      <!-- Link do item de menu para a página especificada -->
+      <a href="home" title="Página inicial">
+        <!-- Ícone do ítem usando Font Awesome -->
+        <!--<i class="fa-solid fa-house-chimney fa-fw"></i>-->
+        <!-- Etiqueta (label) do item -->
+        <span>Início</span>
+      </a>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti rem cupiditate ex rerum nostrum, voluptate fugiat totam! Repellat recusandae doloremque aspernatur sit ullam, ducimus perspiciatis deserunt optio vel commodi.</p>
+      <!-- 
+          Outros itens do menu. 
+          Tem a mesma estrutura do anterior. 
+        -->
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum necessitatibus neque quasi? Quibusdam qui necessitatibus tenetur provident explicabo, magni fuga velit dolorum soluta accusamus maxime eius sit! Quod, perferendis saepe?</p>
-           
+      <a href="contacts" title="Faça contato">
+       <!--<i class="fa-solid fa-comments fa-fw"></i>--> 
+        <span>Contatos</span>
+      </a>
 
-        </article>
+      <a href="about" title="Estéticas">
+        <!--<i class="fa-solid fa-circle-info fa-fw"></i>-->
+        <span>Estética</span>
+      </a>
 
-        <aside>
-            <h3>Sobre Nós</h3>
-            <img src="/src/imagens/logo-site.png" width="250" height="250" alt="logotipo" class="logotipo">
+      <a href="about" title="Vlog">
+        <i class=""></i>
+        <span>Vlog</span>
+      </a>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde excepturi doloribus dolores porro iste deserunt odio ducimus inventore rerum praesentium fugiat culpa, magni quo. Deleniti exercitationem a molestiae est.</p>
+      <a href="profile" title="Perfil de usuário">
+        <!--<i class="fa-regular fa-user fa-fw"></i>-->
+        <span>Perfil</span>
+      </a>
+    </nav>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eaque ut, facere voluptatibus eligendi nesciunt exercitationem non maiores maxime rem accusantium voluptatem provident. Et, eaque recusandae sapiente atque inventore velit?</p>
+    <!-- 
+        Bloco do conteúdo.
+        Este bloco terá um conteúdo diferente para cada página acessada.
+      -->
 
-            <nav>
-                <h4>Redes sociais:</h4>
-                
-                <a href="https://facebook.com/" target="_blank" title="Acesse nosso Facebook">
-                    <i class="fi fi-brands-facebook fa-fw"></i>
-                    <span></span>
-                </a>
-                <a href="https://instagram.com/" target="_blank" title="Nossa página no Instagram">
-                    <i class="fi fi-brands-instagram fa-fw"></i>
-                    <span></span>
-                </a>
-                <a href="https://tiktok/" target="_blank" title="Nosso WhatsApp">
-                    <i class="fi fi-brands-whatsapp fa-fw"></i>
-                    <span></span>                  
-                </a>
-                            
-            </nav>
-        </aside>
+    <main id="content"></main>
 
-        <footer>
+    <!-- Rodapé -->
+    <footer>
+      <!-- Bloco superior do rodapé -->
+      <div id="fsup">
+        <!-- Link para a raiz do aplicativo (página inicial) -->
+        <a href="home" title="Página inicial">
+          <i class="fa-solid fa-house-chimney fa-fw"></i>
+        </a>
 
-            <!-- Bloco superior do rodapé -->
-            <div class="ftop">
+        <!-- Licença do aplicativo -->
+        <div id="copy">&copy; 2022 Absoluta & Bela</div>
 
-                <!-- Link para a página inicial -->
-                <a href="/" title="Página inicial">
-                    <i class="fa-solid fa-house fa-fw"></i>
-                </a>
+        <!-- Link para o topo desta página -->
+        <a href="#top" title="Topo da página">
+          <i class="fa-solid fa-circle-up fa-fw"></i>
+        </a>
+      </div>
 
-                <!-- Licença do app -->
-                <div id="copy">&copy; 2022 Absoluta & Bela</div>
+      <!-- Bloco inferior do rodapé -->
+      <div id="finf">
+        <!-- Menu de redes sociais -->
+        <nav>
+          <h4>Redes sociais:</h4>
+          <a href="https://facebook.com/" target="_blank" title="Nosso Facebook">
+            <i class="fa-brands fa-square-facebook fa-fw"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://instagram.com/" target="_blank" title="Nosso Instagram">
+            <i class="fa-brands fa-square-youtube fa-fw"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://tiktok.com/" target="_blank" title="Nosso TikTok">
+            <i class="fa-brands fa-square-github fa-fw"></i>
+            <span>TikTok</span>
+          </a>
+        </nav>
 
-                <!-- Link para o topo da página -->
-                <a href="#top" title="Topo da página">
-                   <i class="fa-solid fa-up fa-fw"></i>
-                </a>
-            </div>
+        <!-- Menu de links internos -->
+        <nav>
+          <h4>Acesso rápido:</h4>
+          <a href="contacts">
+            <i class="fa-solid fa-comments fa-fw"></i>
+            <span>Contatos</span>
+          </a>
+          <a href="about">
+            <i class="fa-solid fa-circle-info fa-fw"></i>
+            <span>Sobre</span>
+          </a>
+          <a href="policies">
+            <i class="fa-solid fa-user-lock fa-fw"></i>
+            <span>Sua privacidade</span>
+          </a>
+        </nav>
+      </div>
+    </footer>
 
-            <!-- Bloco inferior do rodapé -->
-            <div class="fdown">
-                
+    <!-- Rack para exibir margem inferior do footer sem usar "overflow: auto" -->
+    <span>&nbsp;</span>
 
-                <!-- Menu de links internos -->
-                <nav>
-                    <h4>Acesso rápido:</h4>
-                    <a href="/contacts">
-                        <i class="fa-solid fa-comments fa-fw"></i>
-                        <span>Contatos</span>
-                    </a>
-                    <a href="/about">
-                        <i class="fa-solid fa-circle-info fa-fw"></i>
-                        <span>Sobre</span>
-                    </a>
-                    <a href="/policies">
-                        <i class="fa-solid fa-user-lock fa-fw"></i>
-                        <span>Sua privacidade</span>
-                    </a>
-                </nav>
+    <!-- Fecha o wrap -->
+  </div>
 
-            </div>
+  <!--
+      Importa a biblioteca JavaScript "jQuery" via CDN
+      Para saber mais:
+        • https://jquery.com/
+        • https://www.w3schools.com/jquery/
+    -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-        </footer>
-
-        <span>&nbsp;</span>
-        
-    </div>
-
-    </main>
-   <script src="src/js/script.js"></script>
+  <!-- Inclui o JavaScript do aplicativo, que depende de "jQuery" -->
+  <script src="/script.js"></script>
 </body>
+
 </html>

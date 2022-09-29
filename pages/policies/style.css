@@ -1,0 +1,8 @@
+@import url('../about/style.css');
+
+article img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: auto;
+}

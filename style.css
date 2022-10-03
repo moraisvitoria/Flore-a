@@ -276,7 +276,7 @@ body {
  **********/
 
 #wrap>footer {
-  background-color:  rgba(230, 150, 76, 0.521);
+  background-color:  rgba(228, 189, 60, 0.521);
   border-radius: 0.5rem;
   margin: 0.5rem;
   margin-top: 0;
@@ -288,7 +288,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px dotted rgb(179, 247, 183);
+  border-bottom: 1px dotted rgb(225, 140, 91);
 }
 
 /* Links do bloco */
@@ -304,7 +304,7 @@ body {
 
 /* Links do bloco quando curso passar sobre (:hover) */
 #fsup a:hover {
-  color: rgb(250, 167, 250);
+  color: rgb(167, 172, 250);
 }
 
 /* Bloco inferior do rodapé */
@@ -315,17 +315,25 @@ body {
 }
 
 /* Títulos dos menus */
-#finf h4 {
+
+/*#finf h4 {
   margin: 0 0 0.7rem 0;
   font-weight: normal;
-}
+}*/
 
 /* Links do bloco */
 #finf nav a {
-  display: block;
+  display: inline-flex;
+  background: rgb(119, 134, 138);
+  color: white;
+  margin: 0 6px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
   padding: .3rem;
-  font-size: 0.9rem;
-  color: rgb(255, 240, 255);
+  font-size: 25px;
+ 
 }
 
 #finf nav a span {
@@ -335,9 +343,14 @@ body {
 
 /* Links do bloco quando curso passar sobre (:hover) */
 #finf nav a:hover {
-  color: rgb(250, 167, 250);
+  color: rgb(51, 11, 142);
   text-decoration: none;
 }
+
+#finf nav a:hover > i {
+  transform: scale(1.5) rotate(15deg);
+}
+
 
 /* Torna o rodapé responsivo à telas maiores */
 @media screen and (min-width: 426px) {

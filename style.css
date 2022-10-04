@@ -466,7 +466,7 @@ body {
 }
 
 .cookieBox {
-  background-color: rgb(255, 224, 255);
+  background-color: rgb(255, 248, 224);
   padding: .6rem;
   border-radius: .5rem;
   max-width: 988px;
@@ -477,7 +477,7 @@ body {
   display: block;
   margin: auto;
   margin-top: .5rem;
-  background: linear-gradient(rgb(232, 1, 232), rgb(74, 0, 74));
+  background: linear-gradient(rgb(241, 209, 110), rgb(140, 101, 1));
   color: white;
   border: none;
   box-shadow: 5px 5px 10px 0px rgba(138, 138, 138, 1);
@@ -487,7 +487,7 @@ body {
 }
 
 .cookieBox button:hover {
-  background: linear-gradient(rgb(255, 89, 255), rgb(139, 0, 139));
+  background: linear-gradient(rgb(255, 219, 89), rgb(147, 116, 0));
 }
 
 @media (min-width: 575px) {

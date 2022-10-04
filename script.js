@@ -22,7 +22,7 @@
 function runApp() {
 
   // Carrega a página inicial do site quando este iniciar:
-  loadPage('policies');
+  loadPage('home');
 
   /**
    * jQuery → Quando houver click em um elemento <a>, execute o aplicativo 
@@ -33,10 +33,19 @@ function runApp() {
 
 }
 
+// Prepara o menu dropdown para exibição correta conforme a largura da tela:
+resize();
+
+// Se a largura da tela mudar durante a execução, reajusta o menu dropdown:
+$(window).resize(resize);
+
 /**
  * routerLink() → Aplicativo que processa cliques nos elementos <a>:
  */
 function routerLink() {
+   
+  // Quando clica em qualquer link, oculta o menu dropdown:
+  hideMenu();
 
   /**
    * jQuery → Recebe o atributo "href" do link clicado e armazena em 'href':
@@ -44,6 +53,16 @@ function routerLink() {
    * este processo.
    **/
   var href = $(this).attr('href');
+
+  // Se o link clicado é o botão do menu (href="menu")...
+  if (href == 'menu') {
+
+    // Chama a função que controla a exibição do menu dropdown:
+    toggleMenu();
+
+    // Sai de "routerLink()" sem fazer mais nada (false):
+    return false;
+  }
 
   /**
    * Se faz referência a link externo que começa com "http://" OU "https://",
@@ -130,16 +149,119 @@ function setTitle(title = '') {
   if (title == '') {
 
     // jQuery → Título padrão da página será nomeDoSite + sloganDoSite:
-    $('title').html("Mulheres.Tech .:. Programadoras do Futuro");
+    $('title').html("Absoluta & Bela .:. Centro de estética e beleza");
 
     // Se definiu "title"...
   } else {
 
     // jQuery → Título da página será nomeDoSite + nomeDaPágina:
-    $('title').html("Mulheres.Tech .:. " + title);
+    $('title').html("Absoluta & Bela .:. " + title);
 
   }
 
+}
+
+// Ajusta o menu dropdown:
+function resize() {
+
+  // jQuery → Oculta o menu:
+  $('#dropable').hide('fast');
+
+  // Se a largura da tela é maior que 574px...
+  if (window.innerWidth > 574) {
+
+    // jQuery → Oculta o botão do menu:
+    $('#btnMenu').hide(0);
+
+    // jQuery → Mostra o menu normal:
+    $('.dropable').show(0);
+
+    // Se não...
+  } else {
+
+    // jQuery → Oculta o menu normal:
+    $('.dropable').hide(0);
+
+    // jQuery → Mostra o botão do menu:
+    $('#btnMenu').show(0);
+
+  }
+}
+
+/**
+ * toggleMenu() → Aplicativo que controla a exibição do menu dropdown.
+ */
+function toggleMenu() {
+
+  // jQuery → Se o menu está visível...
+  if ($('#dropable').is(":visible")) {
+
+    // Chama a função que oculta o menu:
+    hideMenu();
+
+    // Se não...
+  } else {
+
+    // Chama a função que mostra o menu:
+    showMenu();
+  }
+}
+
+/**
+ * hideMenu() → Aplicativo que oculta o menu dropdown e também aplica o efeito
+ * de animação no ícone do botão de menu. A classe "fa-rotate-90" que gira o 
+ * ícone, faz parte da biblioteca "Font Awesome". Referências:
+ *     https://fontawesome.com/docs/web/style/rotate
+ */
+function hideMenu() {
+
+  // jQuery → Oculta o menu:
+  $('#dropable').hide('fast');
+
+  // jQuery → Remove rotação do ícone do botão do menu:
+  $('#btnMenu i').removeClass('fa-rotate-90');
+}
+
+/**
+ * showMenu() → Aplicativo que mostra o menu dropdown e também aplica o efeito
+ * de animação no ícone do botão de menu. 
+ */
+function showMenu() {
+
+  // jQuery → Mostra o menu:
+  $('#dropable').show('fast');
+
+  // jQuery → Rotaciona o ícone do botão do menu:
+  $('#btnMenu i').addClass('fa-rotate-90');
+}
+
+/**
+ * setCookie() → Cria cookies:
+ */
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+/**
+ * getCookie() → Lê o valor de um cookie:
+ */
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
 
 /**

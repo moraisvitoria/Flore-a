@@ -60,25 +60,62 @@
           Tem a mesma estrutura do anterior. 
         -->
 
-      <a href="contacts" title="Faça contato">
-       <!--<i class="fa-solid fa-comments fa-fw"></i>--> 
-        <span>Contatos</span>
+        <a href="about" title="Opções de Estéticas" class="dropable">
+          <!--<i class="fa-solid fa-circle-info fa-fw"></i>-->
+          <span>Estéticas</span>
+        </a>
+
+        <a href="vlog" title="Estéticas em Vlog" class="dropable">
+          <i class="fa-regular fa-camcorder fa-fw"></i>
+          <span>Vlog</span>
+        </a>
+  
+
+         <a href="contacts" title="Faça contato" class="dropable">
+            <!--<i class="fa-solid fa-comments fa-fw"></i>--> 
+            <span>Contatos</span>
+        </a>
+
+      
+      
+
+      <a href="profile" title="Perfil de usuário" class="dropable">
+        <i class="fa-regular fa-user fa-fw"></i><span>Perfil</span>
       </a>
 
-      <a href="about" title="Estéticas">
-        <!--<i class="fa-solid fa-circle-info fa-fw"></i>-->
-        <span>Estética</span>
+       <!--
+        Botão que controla o menu dropdown:
+        Este botão só aparece em resoluções menores (mobile frist).
+        Observe que 'href="menu"', para que seja identificado pelo JavaScript.
+      -->
+      <a href="menu" id="btnMenu" title="Abre/fecha menu">
+        <i class="fa-solid fa-ellipsis-vertical fa-fw"></i>
       </a>
+    </nav>
 
-      <a href="about" title="Vlog">
-        <i class=""></i>
-        <span>Vlog</span>
-      </a>
+    <!-- Menu dropdown: Adicione itens ao menu aqui. -->
+    <div id="dropable">
+      <nav>
+        <a href="profile" title="Perfil de usuário"><i class="fa-regular fa-user fa-fw"></i><span>Perfil</span></a>
+        <!-- Separador -->
+        <hr>
 
-      <a href="profile" title="Perfil de usuário">
-        <!--<i class="fa-regular fa-user fa-fw"></i>-->
-        <span>Perfil</span>
-      </a>
+        <a href="contacts" title="Faça contato"><i class="fa-solid fa-comments fa-fw"></i><span>Contatos</span></a>
+
+        <a href="about" title="Opções de Estéticas">
+          <!--<i class="fa-solid fa-circle-info fa-fw"></i>--><span>Estéticas</span></a>
+
+        <a href="vlog" title="Estéticas em Vlog"><i class="fa-regular fa-camcorder fa-fw"></i><span>Vlog</span></a>
+
+        <a href="site" title="Sobre o site..."><i class="fa-solid fa-globe fa-fw"></i><span>Sobre o site</span></a>
+
+        <a href="team" title="Quem somos..."><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
+
+        <!--<a href="policies" title="Políticas de Privacidade"><i class="fa-solid fa-user-lock fa-fw"></i><span>Sua privacidade</span></a>-->
+
+      </nav>
+    </div>
+
     </nav>
 
     <!-- 
@@ -113,15 +150,15 @@
          <!--<h4>Redes sociais:</h4>--> 
           <a href="https://facebook.com/" target="_blank" title="Nosso Facebook">
             <i class="fa-brands fa-facebook-f fa-fw"></i>
-            <!--<span>Facebook</span>-->
+            <span>Facebook</span>
           </a>
           <a href="https://instagram.com/" target="_blank" title="Nosso Instagram">
             <i class="fa-brands fa-instagram fa-fw"></i>
-            <!--<span>Instagram</span>-->
+            <span>Instagram</span>
           </a>
           <a href="https://tiktok.com/" target="_blank" title="Nosso TikTok">
             <i class="fa-brands fa-tiktok fa-fw"></i>
-            <!--<span>TikTok</span>-->
+            <span>TikTok</span>
           </a>
         </nav>
 
@@ -148,6 +185,25 @@
     <span>&nbsp;</span>
 
     <!-- Fecha o wrap -->
+  </div>
+
+  <!-- Mensagem sobre o uso de cookies -->
+  <div id="acCookies">
+
+    <div class="cookieBody">
+
+      <div class="cookieBox">
+
+        <div>
+          Usamos cookies para lhe fornecer uma experiência de navegação melhor e mais segura.
+          Não se preocupe, todos os seus dados pessoais estão protegidos.
+        </div>
+        <button id="accept">Entendi!</button>
+
+      </div>
+
+    </div>
+
   </div>
 
   <!--

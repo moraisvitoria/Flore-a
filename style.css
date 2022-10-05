@@ -1,33 +1,5 @@
-/**
- * Folha de estilos do aplicativo.
- *
- * OBS1: Essas são as folhas de estilo (CSS) do tema (template) do aplicativo. 
- * Posteriormente, cada página (conteúdo) terá sua própria folha de estilos,
- * assim, somente as folhas de estilos necessárias serão carregadas.
- *
- * OBS2: Essas folhas de estilo estão definidas para "mobile first" (320px),
- * usando media queries (@media) para definir o layout em telas maiores.
- *
- * Para saber mais:
- *  • https://www.w3schools.com/css/
- *  • https://www.w3schools.com/cssref/css_selectors.asp
- *  • https://www.w3schools.com/cssref/
- */
-
-/**
- * Importa folhas de estilo para "reset" do CSS "Normalize" via CDN
- * Para saber mais:
- *   • https://necolas.github.io/normalize.css/
- *   • https://pt.wikipedia.org/wiki/Rede_de_fornecimento_de_conte%C3%BAdo
- */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
-/**
-  * Importa a fonte "Lato" do Google Fonts.
-  *  
-  * A bilbioteca Google Fonts fornece milhares de fontes de uso livre para 
-  * aplicativos. Para saber mais, acesse: https://fonts.google.com/    
-  */
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 /***********************

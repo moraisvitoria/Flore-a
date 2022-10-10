@@ -147,43 +147,17 @@ function showMenu() {
  * setCookie() → Cria cookies:
  */
 
- setCookie = (cName, cValue, expDays) => {
-  let date = new Date();
-  date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
-  const expires = "expires=" + date.toUTCString();
-  document.cookie = cName + "=" + cValue + ";" + expires +  " ; path=/";
-}
-
-getCookie = (cName) => {
-  const name = cName + "=";
-  const cDecoded = decodeURIComponent(document.cookie);
-  const cArr = cDecoded.split("; ");
-  let value;
-  cArr.forEach(val => {
-   if(val.indexOf(name) === 0) value = val.substring(name.length);
-})
-
- return value;
-
-document.querySelector("#cookies-btn").addEventListener("click", () => {
-  document.querySelector("#cookies").style.display = "none";
-  setCookie("cookie", true, 30);
-}) 
-
-window.addEventListener("load", cookieMessage);
-
-
-/*function setCookie(cname, cvalue, exdays) {
+function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   let expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}*/
+}
 
 /**
  * getCookie() → Lê o valor de um cookie:
  */
-/*function getCookie(cname) {
+function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
@@ -197,7 +171,7 @@ window.addEventListener("load", cookieMessage);
     }
   }
   return "";
-}*/
+}
 
 var aboutMenu = `
 <a href="site"><i class="fa-solid fa-globe fa-fw"></i><span>Sobre o site</span></a>
@@ -207,4 +181,3 @@ var aboutMenu = `
 `;
 
 $(document).ready(runApp);
-}

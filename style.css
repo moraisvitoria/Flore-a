@@ -43,7 +43,7 @@ a {
 
 /* Ao passar o mouse sobre um link, usando a pseudo classe ":hover" */
 a:hover {
-  color: rgb(159, 226, 168);
+  color: rgba(116, 212, 164, 0.753);
   text-decoration: none;
 }
 
@@ -150,7 +150,7 @@ body {
 
 /* Itens com cursor sobre (hover) */
 #wrap>nav a:hover {
-  color: rgba(243, 160, 82, 0.938);
+  color: rgba(116, 212, 164, 0.753);
 }
 
 /* Link da página inicial */
@@ -272,7 +272,7 @@ body {
 
 /* Links do bloco quando curso passar sobre (:hover) */
 #fsup a:hover {
-  color: rgb(11, 142, 92);
+  color:  rgba(116, 212, 164, 0.753);
 }
 
 /* Bloco inferior do rodapé */
@@ -293,7 +293,7 @@ body {
 #finf nav a {
   display: block;
   padding: .3rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: rgb(243, 237, 234);
  
 }
@@ -305,7 +305,7 @@ body {
 
 /* Links do bloco quando curso passar sobre (:hover) */
 #finf nav a:hover {
-  color: rgb(11, 142, 92);
+  color: rgba(116, 212, 164, 0.753);
   text-decoration: none;
 }
 
@@ -367,7 +367,7 @@ body {
   display: none;
 
   /* Altura do menu */
-  top: 16.9rem;
+  top: 17rem;
 
   /* Menu abre à partir da direita */
   right: 0;
@@ -378,7 +378,7 @@ body {
   border: none;
   margin: 0;
   border-bottom: 1px dotted rgb(234, 183, 151);
-  background-color:rgba(178, 231, 20, 0.955);
+  background-color:rgba(181, 160, 55, 0.955);
 }
 
 #dropable nav {
@@ -422,7 +422,7 @@ body {
 }
 
 #acCookies {
-  /*display: none;*/
+  display: none;
   position: fixed;
   bottom: 0;
   width: 100%;  

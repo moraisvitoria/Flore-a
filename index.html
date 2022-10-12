@@ -37,26 +37,10 @@
       </h1>
     </header>
 
-    <!--
-        Menu principal:
-          / → Raiz do aplicativo → Será carregada a "index.html";
-          /contacts → Página com formulário e links de contato;
-          /about → Sobre o site, autor e privacidade;
-          /profile → Gestão do usuário (login, logou, perfil, ...).
-       -->
     <nav>
-      <!-- Link do item de menu para a página especificada -->
       <a href="home" title="Página inicial">
-        <!-- Ícone do ítem usando Font Awesome -->
-        <!--<i class="fa-solid fa-house-chimney fa-fw"></i>-->
-        <!-- Etiqueta (label) do item -->
         <span>Início</span>
       </a>
-
-      <!-- 
-          Outros itens do menu. 
-          Tem a mesma estrutura do anterior. 
-        -->
 
         <a href="about" title="Opções de Estéticas" class="dropable">
           <i class="fa-solid fa-syringe fa-fw"></i>
@@ -74,24 +58,16 @@
             <span>Contatos</span>
         </a>
 
-      
-      
-
       <a href="profile" title="Perfil de usuário" class="dropable">
         <i class="fa-regular fa-user fa-fw"></i><span>Perfil</span>
       </a>
 
-       <!--
-        Botão que controla o menu dropdown:
-        Este botão só aparece em resoluções menores (mobile frist).
-        Observe que 'href="menu"', para que seja identificado pelo JavaScript.
-      -->
       <a href="menu" id="btnMenu" title="Abre/fecha menu">
         <i class="fa-solid fa-ellipsis-vertical fa-fw"></i>
       </a>
     </nav>
 
-    <!-- Menu dropdown: Adicione itens ao menu aqui. -->
+    
     <div id="dropable">
       <nav>
         <a href="profile" title="Perfil de usuário"><i class="fa-regular fa-user fa-fw"></i><span>Perfil</span></a>

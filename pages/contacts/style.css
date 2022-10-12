@@ -28,7 +28,7 @@
 
 #contacts button {
     width: auto;
-    background: linear-gradient(rgb(232, 1, 232), rgb(74, 0, 74));
+    background: linear-gradient(rgb(228, 232, 1), rgb(92, 92, 1));
     color: white;
     border: none;
     box-shadow: 5px 5px 10px 0px rgba(138, 138, 138, 1);
@@ -36,7 +36,7 @@
 }
 
 #contacts button:hover {
-    background: linear-gradient(rgb(255, 89, 255), rgb(139, 0, 139));
+    background: linear-gradient(rgb(255, 247, 89), rgb(134, 139, 0));
 }
 
 /* Estilo para campos válidos */
@@ -74,20 +74,16 @@
     color: #4267B2;
 }
 
-.social i[class~=fa-youtube] {
-    color: #FF0000;
+.social i[class~=fa-instagram] {
+    color: #ff00c8;
 }
 
-.social i[class~=fa-github] {
-    color: rgb(61, 61, 61);
+.social i[class~=fa-envelope] {
+    color: rgba(229, 44, 44, 0.54);
 }
 
 .social i[class~=fa-whatsapp] {
     color: #128C7E;
-}
-
-.social i[class~=fa-phone] {
-    color: purple;
 }
 
 .about {

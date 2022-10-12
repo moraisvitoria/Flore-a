@@ -1,1 +1,36 @@
-@import url('../about/style.css');
+/*@import url('../about/style.css');*/
+span {
+    padding: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+small {
+    display: block;
+    margin-left: 5vh;
+    font-size: 1rem;
+}
+
+.midias  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midias i[class~=fa-instagram] {
+    color: #cd03a1;
+    padding: 0.8rem;
+}
+
+.midias i[class~=fa-github] {
+    color: #080508;
+    padding: 0.8rem;
+}
+
+aside {
+    margin: 0 0.5rem 0 0;
+    min-width: 220px;
+    max-width: 220px;
+    margin-bottom: 0.5rem;
+  }
+  

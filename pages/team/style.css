@@ -1,36 +1,68 @@
 /*@import url('../about/style.css');*/
+
+aside {
+    margin: 0 0.5rem 0 0;
+    margin-bottom: 0.5rem;
+    overflow-x: auto; 
+}
+
 span {
     padding: 2vh;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 small {
     display: block;
-    margin-left: 5vh;
-    font-size: 1rem;
+    margin-left: 4vh;
+    font-size: .9rem;
 }
 
+
 .midias  {
-    display: flex;
     justify-content: center;
     align-items: center;
+
+    
+    /*display: flex;
+    */
+}
+
+.midias a {
+    display: inline-flex; 
+    width: 50px;
+    height: 50px;
+    background: rgb(143, 158, 162);
+    margin: 2vh;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 1.5rem;
+}
+
+.midias a:hover {
+    background: #708ca7a6;
 }
 
 .midias i[class~=fa-instagram] {
-    color: #cd03a1;
-    padding: 0.8rem;
+    color: #b20695;
+    padding: 0.3rem;
+    transition: 0.4s all;
 }
 
 .midias i[class~=fa-github] {
     color: #080508;
-    padding: 0.8rem;
+    padding: 0.2rem;
+    transition: 0.4s all;
+
 }
 
-aside {
-    margin: 0 0.5rem 0 0;
-    min-width: 220px;
-    max-width: 220px;
-    margin-bottom: 0.5rem;
+
+.midias a:hover > i {
+    transform: scale(1.5) rotate(15deg);
 }
+
+
+
   

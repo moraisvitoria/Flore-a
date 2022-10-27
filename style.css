@@ -321,34 +321,18 @@ body {
   }
 }
 
-/**
- * Sticky Footer
- * Força o rodapé a aparecer sempre na parte inferior da tela,
- * independentemente de quanto conteúdo a página tem, aumentando
- * automaticamente a altura de <main> e de <article>.
-*/
-
-/* Torna elementos de "#wrap" flexbox e os empilha verticalmente */
 #wrap {
   display: flex;
   flex-direction: column;
 }
 
-/* Força crescimento de <main> e de <article> */
 #wrap>main, #wrap>main article {
   flex-grow: 1;
 }
 
-/* Fim do Sticky Footer */
-
-/* Rack para exibir margem inferior do <footer> */
 #wrap>span {
   font-size: 1px;
 }
-
-/************************************
- * Experimental - CSS Menu dropdown *
- ************************************/
 
  #dropable {
   position: absolute;
@@ -356,18 +340,11 @@ body {
   background: rgba(0, 0, 0, 0.201);
   border-radius: .5rem 0 0 .5rem;
   z-index: 10;
-
-  /* Menu oculto por padrão */
   display: none;
-
-  /* Altura do menu */
   top: 17rem;
-
-  /* Menu abre à partir da direita */
   right: 0;
 }
 
-/* Separador dos itens do menu */
 #dropable hr {
   border: none;
   margin: 0;
@@ -388,7 +365,6 @@ body {
   background-color: rgb(185, 119, 57);
 }
 
-/* Arredonda bordas */
 #dropable nav a:first-child {
   border-radius: .5rem .5rem 0 0;
 }
@@ -410,7 +386,6 @@ body {
   margin-left: .5rem;
 }
 
-/* Animação do botão do menu */
 #btnMenu i {
   transition: .2s;
 }

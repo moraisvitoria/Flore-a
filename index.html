@@ -38,7 +38,7 @@
     </header>
 
     <nav>
-      <a href="home" title="Página inicial">
+      <a href="home" title="Página inicial" class="dropable">
         <span>Início</span>
       </a>
 
@@ -58,36 +58,36 @@
             <span>Contatos</span>
         </a>
 
-        <a href="team" title="Quem somos..." class="dropable"><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
+        <!--<a href="team" title="Quem somos..." class="dropable"><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
 
       <a href="profile" title="Perfil de usuário" class="dropable">
         <i class="fa-regular fa-user fa-fw"></i><span>Perfil</span>
-      </a>
+      </a>-->
 
-      <a href="menu" id="btnMenu" title="Abre/fecha menu">
-        <i class="fa-solid fa-ellipsis-vertical fa-fw"></i>
-      </a>
+      <!--<a href="menu" id="btnMenu" title="Abre/fecha menu">
+        <i class="fa-solid fa-bars fa-fw"></i>
+      </a>-->
     </nav>
 
-    
-    <div id="dropable">
-      <nav>
-        <a href="profile" title="Perfil de usuário"><i class="fa-regular fa-user fa-fw"></i><span>Perfil</span></a>
-        <!-- Separador -->
+    <div id="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+          <span></span>
+      </label>
+
+      <nav class="menu__box">
+        <a href="home" title="Página inicial"><span>Início</span></a>
+        <!--<a href="profile" title="Perfil de usuário"><i class="fa-regular fa-user fa-fw"></i><span>Perfil</span></a>-->
         <hr>
+        <a class="menu__item" href="about" title="Opções de Estéticas"><span>Estéticas</span></a>
 
-        <a href="about" title="Opções de Estéticas">
-          <!--<i class="fa-solid fa-circle-info fa-fw"></i>--><span>Estéticas</span></a>
+        <a class="menu__item" href="vlog" title="Estéticas em Vlog"><span>Vlog</span></a>
 
-        <a href="vlog" title="Estéticas em Vlog"><i class="fa-light fa-camera fa-fw"></i><span>Vlog</span></a>
+        <a class="menu__item" href="contacts" title="Faça contato"><span>Contatos</span></a>
 
-        <a href="contacts" title="Faça contato"><i class="fa-solid fa-comments fa-fw"></i><span>Contatos</span></a>
+        <a class="menu__item" href="team" title="Quem somos..."><span>Quem somos</span></a>
 
-        <a href="team" title="Quem somos..."><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
-
-        <a href="site" title="Sobre o site..."><i class="fa-solid fa-globe fa-fw"></i><span>Sobre o site</span></a>
-
-        <!--<a href="policies" title="Políticas de Privacidade"><i class="fa-solid fa-user-lock fa-fw"></i><span>Sua privacidade</span></a>-->
+        <a class="menu__item" href="site" title="Sobre o site..."><span>Sobre o site</span></a>
 
       </nav>
     </div>

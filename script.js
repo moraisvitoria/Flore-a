@@ -1,7 +1,6 @@
 function runApp() {
   loadPage('home');
    $(document).on('click', 'a', routerLink);
-
 }
 
 resize();
@@ -87,7 +86,6 @@ function setTitle(title = '') {
     $('title').html("Absoluta & Bela .:. " + title);
 
   }
-
 }
 
 // Ajusta o menu dropdown:
@@ -123,7 +121,7 @@ function resize() {
 function toggleMenu() {
 
   // jQuery → Se o menu está visível...
-  if ($('#dropable').is(":visible")) {
+  if ($('#hamburger-menu').is(":visible")) {
 
     // Chama a função que oculta o menu:
     hideMenu();
@@ -133,19 +131,19 @@ function toggleMenu() {
 }
 
 function hideMenu() {
-  $('#dropable').hide('fast');
+  $('#hamburger-menu').hide('fast');
   $('#btnMenu i').removeClass('fa-rotate-90');
 }
 
 
 function showMenu() {
-  $('#dropable').show('fast');
+  $('#hamburger-menu').show('fast');
   $('#btnMenu i').addClass('fa-rotate-90');
 }
 
-/**
+/*******
  * setCookie() → Cria cookies:
- */
+ *******/
 
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();

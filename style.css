@@ -85,30 +85,51 @@ body {
  ******************/
 
 #wrap>nav {
-  background-color: rgba(199, 125, 55, 0.945);
+  background-color: rgb(6, 101, 190);
   border-radius: 0.5rem;
   margin: 0.5rem;
   margin-top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  max-width: 1024px;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: flex-end;*/
+}
+
+/*nav::after {
+	display: block;
+	content: '';
+	clear: both;
+}*/
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
 /* Itens do menu */
-#wrap>nav a {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0.7rem;
-  text-align: center;
-  color: rgb(255, 254, 254);
+#wrap>nav ul li a {
+  display: block;
+  color: rgba(255, 254, 254, .9);
   text-decoration: none;
-  transition: 0.25s;
+  padding: 1rem 2rem;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  align-items: center;
+  /*flex-direction: column;*/
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 
-#wrap>nav a:hover {
-  color: rgba(116, 212, 164, 0.753);
+#wrap>nav a:hover,
+#wrap>nav a:focus {
+  color: rgba(31, 0, 110, 0.896);
 }
+
+/*nav ul li a:not(:only-child)::after {
+	padding-left: 4px;
+	content: ' ▾';
+}*/
 
 /* Link da página inicial */
 #wrap>nav a:first-child {
@@ -116,9 +137,9 @@ body {
 }
 
 /* Ícones do menu */
-#wrap>nav i {
+/*#wrap>nav i {
   font-size: 2rem;
-}
+}*/
 
 /* Labels do menu */
 #wrap>nav span {
@@ -134,15 +155,31 @@ body {
   }
 
   /* Diminui tamanho dos ícones */
-  #wrap>nav i {
+  /*#wrap>nav i {
     font-size: 1.2rem;
-  }
+  }*/
 
   /* Alinha labels com os ícones horizontalmente */
   #wrap>nav span {
     margin-top: 0;
     margin-left: .4rem;
   }
+}
+
+  #wrap>nav ul li a:focus {
+	color: white;
+}
+
+  #wrap>nav ul li a:not(:only-child)::after {
+	padding-left: 4px;
+	content: ' ▾';
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background: rgba(224, 224, 220, 0.753);
+  box-shadow: 0 4px 10px rgb(255, 254, 254);
 }
 
 /************

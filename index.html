@@ -37,34 +37,26 @@
       </h1>
     </header>
 
-    <nav>
-      <a href="home" title="Página inicial" class="dropable">
-        <span>Início</span>
-      </a>
-
-        <a href="about" title="Opções de Estéticas" class="dropable">
-          <i class="fa-solid fa-syringe fa-fw"></i>
-          <span>Estéticas</span>
-        </a>
-
-        <a href="vlog" title="Estéticas em Vlog" class="dropable">
-          <i class="fa-solid fa-video fa-fw"></i>
-          <span>Vlog</span>
-        </a>
-  
-
-         <a href="contacts" title="Faça contato" class="dropable">
-            <i class="fa-solid fa-comments fa-fw"></i>
-            <span>Contatos</span>
-        </a>
-
+    <nav class="nav">
+      <ul>
+         <li><a href="home" title="Página inicial" class="dropable"><span>Início</span></a>
+         <li class="drop"><a href="about" title="Opções de Tratamentos" class="dropable"><span>Tratamentos</span></a>
+            <ul class="dropdown">
+              <li><a href="#">Diagnósticos</a></li>
+              <li><a href="#">Tratamento facial</a></li>
+              <li><a href="#">Tratamento corporal</a></li>
+            </ul>
+         </li>
+         <li><a href="vlog" title="Estéticas em Vlog" class="dropable"><span>Vlog</span></a>
+         <li><a href="contacts" title="Faça contato" class="dropable"><span>Contatos</span></a>
+      </ul>
         <!--<a href="team" title="Quem somos..." class="dropable"><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
 
-      <a href="profile" title="Perfil de usuário" class="dropable">
+        <a href="profile" title="Perfil de usuário" class="dropable">
         <i class="fa-regular fa-user fa-fw"></i><span>Perfil</span>
-      </a>-->
+        </a>-->
 
-      <!--<a href="menu" id="btnMenu" title="Abre/fecha menu">
+        <!--<a href="menu" id="btnMenu" title="Abre/fecha menu">
         <i class="fa-solid fa-bars fa-fw"></i>
       </a>-->
     </nav>
@@ -76,19 +68,22 @@
       </label>
 
       <nav class="menu__box">
-        <a href="home" title="Página inicial"><span>Início</span></a>
+        <ul>
+          <li><a href="home" title="Página inicial"><span>Início</span></a>
         <!--<a href="profile" title="Perfil de usuário"><i class="fa-regular fa-user fa-fw"></i><span>Perfil</span></a>-->
         <hr>
-        <a class="menu__item" href="about" title="Opções de Estéticas"><span>Estéticas</span></a>
-
-        <a class="menu__item" href="vlog" title="Estéticas em Vlog"><span>Vlog</span></a>
-
-        <a class="menu__item" href="contacts" title="Faça contato"><span>Contatos</span></a>
-
-        <a class="menu__item" href="team" title="Quem somos..."><span>Quem somos</span></a>
-
-        <a class="menu__item" href="site" title="Sobre o site..."><span>Sobre o site</span></a>
-
+          <li><a class="menu__item" href="about" title="Opções de Estéticas"><span>Tratamentos</span></a>
+            <ul class="dropdown">
+              <li><a href="#">Diagnósticos</a></li>
+              <li><a href="#">Tratamento facial</a></li>
+              <li><a href="#">Tratamento corporal</a></li>
+            </ul>
+          </li>
+            <li> <a class="menu__item" href="vlog" title="Estéticas em Vlog"><span>Vlog</span></a>
+            <li><a class="menu__item" href="contacts" title="Faça contato"><span>Contatos</span></a>
+            <li><a class="menu__item" href="team" title="Quem somos..."><span>Quem somos</span></a>
+            <li><a class="menu__item" href="site" title="Sobre o site..."><span>Sobre o site</span></a>
+        </ul>
       </nav>
     </div>
 

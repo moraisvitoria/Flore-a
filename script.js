@@ -141,14 +141,14 @@ function showMenu() {
   $('#btnMenu i').addClass('fa-rotate-90');
 }
 
-/*$(".drop")
+$(".drop")
   .mouseover(function() {
   $(".dropdown").show(300);
 });
 $(".drop")
   .mouseleave(function() {
   $(".dropdown").hide(300);     
-});*/
+});
 
 /*******
  * setCookie() → Cria cookies:

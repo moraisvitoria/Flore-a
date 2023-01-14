@@ -1,11 +1,12 @@
 <?php
 
 $c = array(
-    'sitename' => 'Absoluta & Bela',
+    'sitename' => 'Floreça',
     'siteslogan' => '',
     'sitelogo' => '',
+    'sitefavicon' => '',
     'titlesep' => '&middot;&middot;&middot;',
-    'siteemail' => 'admin@absolutabela.com',
+    'siteemail' => '',
     'ucookie' => 'mtuserdata',
     'ucookiedays' => 365
 );
@@ -13,17 +14,17 @@ $c = array(
 $s = array(
     array(
         'name' => 'Facebook',
-        'link' => 'https://facebook.com/Absoluta&Bela',
+        'link' => 'https://facebook.com/Floreça',
         'icon' => 'fa-square-facebook'
     ),
     array(
         'name' => 'Youtube',
-        'link' => 'https://instagram.com/Absoluta&Bela',
+        'link' => 'https://instagram.com/Floreça',
         'icon' => 'fa-square-instagram'
     ),
     array(
-        'name' => 'GitHub',
-        'link' => 'https://tiktok.com/Absoluta&Bela',
+        'name' => 'Tiktok',
+        'link' => 'https://tiktok.com/Floreça',
         'icon' => 'fa-square-tiktok'
     )
 );

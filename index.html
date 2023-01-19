@@ -1,187 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Absoluta & Bela</title>
+  <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="src/css/style.css">
+  <link rel="icon" href="/img/icone.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="" id="pageCSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
-    <!--
-        2. Inclui Font Awesome pelo CDNJS.
-        Para saber mais sobre a Font Awesome, acesse
-        https://fontawesome.com/docs
-    -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
+  <title>Absoluta & Bela</title>
 </head>
 
 <body>
+  
+  <a id="top"></a>
 
-    <!-- Âncora do início da página -->
-    <a id="top"></a>
+  <div id="wrap">
+    
+    <header>
+      
+      <a href="home" title="Página inicial">
+        <img src="/img/logotipo.png" alt="logotipo" height="100" width="100">
+      </a>
 
-    <!-- Elemento wrap -->
-    <div id="wrap">
+      <h1>
+        Absoluta & Bela
+        <small>Centro de estética e beleza</small>
+      </h1>
+    </header>
 
-        <!-- Cabeçalho -->
-        <header>
-
-            <!-- Logotipo clicável usando Font Awesome -->
-            <a href="/" title="Página inicial"></a>
-
-            <h1>
-                Absoluta & Bela
-                <small>Slogan </small>
-            </h1>
-
-        </header>
-
-        <!-- Menu principal -->
-        <nav class="nav">
-            <ul>
-                <li><a href="#">Início</a>
-                    <li class="drop"><a href="#">Estética Facial</a>   
-                        <ul class="dropdown">
-                            <li><a href="#">Facial 1</a>
-                            <li><a href="#">Facial 2</a>
-                            <li><a href="#">Facial 3</a>   
-                        </ul> 
-        
-                     <li class="drop"><a href="#">Estética Corporal</a>   
-                         <ul class="dropdown">
-                            <li><a href="#">Corporal 1</a>
-                            <li><a href="#">Corporal 2</a>
-                            <li><a href="#">Corporal 3</a>   
-                        </ul> 
-                    <li><a href="#">Vlog</a>
-                    <li><a href="#">Compra pelo WhatsApp</a> 
-            
+    <nav class="nav">
+      <ul>
+         <li><a href="home" title="Página inicial" class="dropable"><span>Início</span></a>
+         <li class="drop"><a href="about" title="Opções de Tratamentos" class="dropable"><span>Tratamentos</span></a>
+            <ul class="dropdown">
+              <li><a href="#">Diagnósticos</a></li>
+              <li><a href="#">Tratamento facial</a></li>
+              <li><a href="#">Tratamento corporal</a></li>
             </ul>
-        
-        </nav>
-        <!-- Conteúdo -->
-        <main>
+         </li>
+         <li><a href="vlog" title="Estéticas em Vlog" class="dropable"><span>Vlog</span></a>
+         <li><a href="contacts" title="Faça contato" class="dropable"><span>Contatos</span></a>
+      </ul>
+        <!--<a href="team" title="Quem somos..." class="dropable"><i class="fa-solid fa-users fa-fw"></i><span>Quem somos</span></a>
 
-            <!-- Conteúdo principal -->
-            <article>
-                <!--
-                    Este é um conteúdo "fake", apenas para "encher linguiça"
-                    e facilitar a construção do layout.
-                -->
-                <h2>Título de teste</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia provident reiciendis earum, tenetur reprehenderit iure ipsum fugit praesentium alias deserunt sed maiores id rerum odio delectus perferendis voluptatum totam!</p>
+        <a href="profile" title="Perfil de usuário" class="dropable">
+        <i class="fa-regular fa-user fa-fw"></i><span>Perfil</span>
+        </a>-->
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero hic, modi pariatur culpa animi cum! Consequatur, odit! Repudiandae, dolorem temporibus, quaerat, unde enim error eum minus praesentium libero quibusdam consequuntur.</p>
-                <img src="https://picsum.photos/200/200" alt="Imagem aleatória.">
+        <!--<a href="menu" id="btnMenu" title="Abre/fecha menu">
+        <i class="fa-solid fa-bars fa-fw"></i>
+      </a>-->
+    </nav>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae illum aliquam aperiam, laborum fugiat quos sunt expedita culpa! Minima harum mollitia aperiam nihil dolorem animi accusantium quia maxime expedita.</p>
+    <div id="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+          <span></span>
+      </label>
 
-                <!--<h3>Lista de links:</h3>
-                <ul>
-                    <li><a href="https://">TikTok</a></li>
-                    <li><a href="https://">Instagram</a></li>
-                    <li><a href="https://">Facebook</a></li>
-                </ul>-->
-
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam commodi inventore nemo doloribus asperiores provident, recusandae maxime quam molestiae sapiente autem, suscipit perspiciatis. Numquam labore minima, accusamus vitae exercitationem quod!</p>
-
-                <!-- Fim do conteúdo "fake" -->
-
-            </article>
-
-            <!-- Conteúdo complementar / Barra lateral -->
-            <aside>
-                <!--
-                    Este é um conteúdo "fake", apenas para "encher linguiça"
-                    e facilitar a construção do layout.
-                -->
-                <h3>Barra lateral</h3>
-                <img src="/src/imagens/logo-site.png" alt="logotipo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, cumque porro.</p>
-
-                <nav>
-                    <h4>Redes sociais:</h4>
-                    <a href="https://facebook.com/Luferat" target="_blank" title="Acesse nosso Facebook">
-                        <i class="fa-brands fa-square-facebook fa-fw"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://youtube.com/Luferat" target="_blank" title="Nosso canal no Youtube">
-                        <i class="fa-brands fa-square-youtube fa-fw"></i>
-                        <span>Youtube</span>
-                    </a>
-                    <a href="https://github.com/Luferat" target="_blank" title="Nossa página no GitHub">
-                        <i class="fa-brands fa-square-github fa-fw"></i>
-                        <span>GitHub</span>
-                    </a>
-                </nav>
-
-
-
-                <!-- Fim do conteúdo "fake" -->
-            </aside>
-
-        </main>
-
-        <!-- Rodapé -->
-        <footer>
-
-            <!-- Bloco superior do rodapé -->
-            <div id="ftop">
-
-                <!-- Link para a página inicial -->
-                <a href="/" title="Página inicial">
-                    <i class="fa-solid fa-house fa-fw"></i>
-                </a>
-
-                <!-- Licença do app -->
-                <div id="copy">&copy; 2022 Absoluta & Bela</div>
-
-                <!-- Link para o topo da página -->
-                <a href="#top" title="Topo da página">
-                   <i class="fa-solid fa-up fa-fw"></i>
-                </a>
-            </div>
-
-            <!-- Bloco inferior do rodapé -->
-            <div id="fdown">
-
-                <!-- Menu de redes sociais -->
-                
-
-                <!-- Menu de links internos -->
-                <nav>
-                    <h4>Acesso rápido:</h4>
-                    <a href="/contacts">
-                        <i class="fa-solid fa-comments fa-fw"></i>
-                        <span>Contatos</span>
-                    </a>
-                    <a href="/about">
-                        <i class="fa-solid fa-circle-info fa-fw"></i>
-                        <span>Sobre</span>
-                    </a>
-                    <a href="/policies">
-                        <i class="fa-solid fa-user-lock fa-fw"></i>
-                        <span>Sua privacidade</span>
-                    </a>
-                </nav>
-
-            </div>
-
-        </footer>
-
-        <span>&nbsp;</span>
-        
-        <!-- Fecha o wrap -->
+      <nav class="menu__box">
+        <ul>
+          <li><a href="home" title="Página inicial"><span>Início</span></a>
+        <!--<a href="profile" title="Perfil de usuário"><i class="fa-regular fa-user fa-fw"></i><span>Perfil</span></a>-->
+        <hr>
+          <li><a class="menu__item" href="about" title="Opções de Estéticas"><span>Tratamentos</span></a>
+            <ul class="dropdown">
+              <li><a href="#">Diagnósticos</a></li>
+              <li><a href="#">Tratamento facial</a></li>
+              <li><a href="#">Tratamento corporal</a></li>
+            </ul>
+          </li>
+            <li> <a class="menu__item" href="vlog" title="Estéticas em Vlog"><span>Vlog</span></a>
+            <li><a class="menu__item" href="contacts" title="Faça contato"><span>Contatos</span></a>
+            <li><a class="menu__item" href="team" title="Quem somos..."><span>Quem somos</span></a>
+            <li><a class="menu__item" href="site" title="Sobre o site..."><span>Sobre o site</span></a>
+        </ul>
+      </nav>
     </div>
 
-    <!-- 1. Inclui a biblioteca jQuery pelo CDNJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </nav>
 
-    <!-- 2. Inclui o JavaScript do site -->
-    <script src="/script.js"></script>
+    <main id="content"></main>
 
+    <footer>
+     
+      <div id="fsup">
+        
+        <a href="home" title="Página inicial">
+          <i class="fa-solid fa-house-chimney fa-fw"></i>
+        </a>
+
+        <div id="copy">&copy; 2022 Absoluta & Bela</div>
+
+        <a href="#top" title="Topo da página">
+          <i class="fa-solid fa-circle-up fa-fw"></i>
+        </a>
+      </div>
+
+      <div id="finf">
+ 
+        <nav>
+        
+          <a href="https://facebook.com/" target="_blank" title="Nosso Facebook">
+            <i class="fa-brands fa-facebook fa-fw"></i>
+            <span>Facebook</span>
+          </a>
+          <a href="https://instagram.com/" target="_blank" title="Nosso Instagram">
+            <i class="fa-brands fa-instagram fa-fw"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="https://tiktok.com/" target="_blank" title="Nosso TikTok">
+            <i class="fa-brands fa-tiktok fa-fw"></i>
+            <span>TikTok</span>
+          </a>
+        </nav>
+
+        <nav>
+         
+          <a href="policies">
+            <i class="fa-solid fa-user-lock fa-fw"></i>
+            <span>Políticas de Privacidade</span>
+          </a>
+
+          <a href="https://www.flaticon.com/br/icones-gratis/cirurgia-plastica" target="_blank" title="cirurgia plástica ícone">Ícone criado por Flat Icons - Flaticon</a>
+
+        </nav>
+      </div>
+    </footer>
+
+    <span>&nbsp;</span>
+
+  </div>
+
+  <div id="acCookies">
+
+    <div class="cookieBody">
+
+      <div class="cookieBox">
+
+        <div>
+          Este site usa cookies para garantir que você tenha a melhor experiência em nosso site.
+        </div>
+        <button id="accept">Entendi!</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
